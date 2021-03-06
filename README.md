@@ -1,44 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Reseptisovelluksen käyttöliittymä
 
-## Available Scripts
+Projektin pohjana on käytetty seuraavia työkaluja
 
-In the project directory, you can run:
+[Create React App](https://github.com/facebook/create-react-app)
+[Redux](https://redux.js.org/)
+[Redux Toolkit](https://redux-toolkit.js.org/)
 
-### `yarn start`
+## Projektin lataaminen omalle koneelle
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sinulla täytyy olla [git](https://git-scm.com/) asennettuna.
+Mene komentorivillä kansioon (hakemistoon) johon haluat koodikansion (allaoleva komento luo siis vielä uuden kansion) ja aja komento:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+`git clone https://github.com/Heavytik/reseptit-frontend.git`
 
-### `yarn test`
+## Koodaaminen
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Suositeltava editori on Visual Studio Code. Asenna se. Voi koodata muillakin, mutta esim. automaattinen koodimuotoilu hoituu tuolla parhaiten.
 
-### `yarn build`
+### Komentoriviltä ajettavat komennot
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Komennot suoritetaan "juurikansiossa" reseptit-frontend
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Asenna ensin [node + npm](https://nodejs.org/en/) LTS versio.
+(voit testata asennuksen onnistumisen kirjoittamalla node -v ja npm -v)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Seuraavaksi asenna yarn [yarn](https://classic.yarnpkg.com/en/)
 
-### `yarn eject`
+#### `yarn install`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Sovelluksen koodi tarvitsee toimiakseen lisäosia, joita ei tallenneta githubiin.Saat ne omalle koneellesi tuolla komennolla (package.json tiedostoon voi kirjoittaa mitä lisäosia sovellukseen asennetaan). Tämä komento täytyy asentaa aina jos joku asentaa uusia riippuvuuksia ("package.json" tiedosto muuttuu) ja tietysti aina ensimmäisellä kerralla kun repo on kloonattu koneelle.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `yarn start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Tämä käynnistää käyttöliittymän ja voit selailla sitä omalla koneellasi localhostin portissa 3000.
+[http://localhost:3000](http://localhost:3000)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### `yarn build`
 
-## Learn More
+Ei vielä tarvita.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Koodin kirjoittamisen perusteet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tällä hetkellä koodi on vielä aika sekavaa. Osa pohjatiedostosta mukana tulleesta koodista on turhaa. Tärkeimmät tiedostot ovat src kansiossa. Siellä tärkeitä ovat erityisesti tiedosto App.tsx ja Features kansiossa olevat alikansiot. Niitä tiedostoja muokataan, kun sovellusta tehdään.
+
+#### Tärkeimmät ohjeet muokkaukseen
+
+Lähes kaikki näistä asioista kannattaa käydä läpi sellaisen kanssa, joka tuntee jo nämä käsitteet. Yksinkin voi opiskella, mutta paljon tulee silloin käytettyä turhaankin aikaa. Toki jonkin verran voi selailla. Tärkintä on ensin hankkia perusteet ja sen jälkeen katsoa näistä mallia, että miten se nyt siis tehdään.
+
+[React](https://reactjs.org/docs/hello-world.html)
+[React Router](https://reactrouter.com/web/example/basic)
+[Redux-toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+
+
