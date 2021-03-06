@@ -2,9 +2,9 @@
 
 Projektin pohjana on käytetty seuraavia työkaluja
 
-[Create React App](https://github.com/facebook/create-react-app)
-[Redux](https://redux.js.org/)
-[Redux Toolkit](https://redux-toolkit.js.org/)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ## Projektin lataaminen omalle koneelle
 
@@ -17,14 +17,14 @@ Mene komentorivillä kansioon (hakemistoon) johon haluat koodikansion (allaoleva
 
 Suositeltava editori on Visual Studio Code. Asenna se. Voi koodata muillakin, mutta esim. automaattinen koodimuotoilu hoituu tuolla parhaiten.
 
-### Komentoriviltä ajettavat komennot
-
-Komennot suoritetaan "juurikansiossa" reseptit-frontend
-
 Asenna ensin [node + npm](https://nodejs.org/en/) LTS versio.
 (voit testata asennuksen onnistumisen kirjoittamalla node -v ja npm -v)
 
-Seuraavaksi asenna yarn [yarn](https://classic.yarnpkg.com/en/)
+Seuraavaksi asenna [yarn](https://classic.yarnpkg.com/en/)
+
+### Komentoriviltä ajettavat komennot
+
+Komennot suoritetaan "juurikansiossa" reseptit-frontend:
 
 #### `yarn install`
 
@@ -37,7 +37,7 @@ Tämä käynnistää käyttöliittymän ja voit selailla sitä omalla koneellasi
 
 #### `yarn build`
 
-Ei vielä tarvita.
+Ei vielä tarvita. Build tehdään sitten kun backend on toiminnassa.
 
 ### Koodin kirjoittamisen perusteet
 
